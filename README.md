@@ -7,7 +7,7 @@ for supporting open-source/weight OpenAI API-compatible models.
 
 ## Installation
 
-To use this codebase, you must [Python](https://www.python.org/downloads/) and [Jupyter](https://jupyter.org/install) installed on your
+To use this codebase, you must have [Python](https://www.python.org/downloads/) and [Jupyter](https://jupyter.org/install) installed on your
 system.
 
 1. Clone this repository to your local machine.
