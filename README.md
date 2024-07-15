@@ -7,11 +7,54 @@ for supporting open-source/weight OpenAI API-compatible models.
 
 ## Installation
 
-To use this codebase, you must have [Python](https://www.python.org/downloads/) and [Jupyter](https://jupyter.org/install) installed on your
+To use this codebase, you must have [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
+and [Jupyter](https://jupyter.org/install) installed on your
 system.
 
+1. Open your terminal or command prompt.
+
+2. Create a new conda environment with Python 3.12:
+
+```
+conda create -n cog-tutorial python=3.12
+```
+
+3. Activate the newly created environment:
+
+```
+conda activate cog-tutorial
+```
+
+4. Install Jupyter Lab in the activated environment:
+
+```
+conda install -c conda-forge jupyterlab
+```
+
+5. Once the installation is complete, you can launch Jupyter Lab by running:
+
+```
+jupyter lab
+```
+
+# Running the Tutorial
+
+Next, you can run the tutorial notebook by following the instructions below.
+
 1. Clone this repository to your local machine.
-2. Open the notebook `tutorial.ipynb` in Jupyter or any IDE of your choice.
+
+```
+git clone https://github.com/chatgpt4pcg/tutorial-2024-notebook.git
+```
+
+2. Change directory to the cloned repository:
+
+```
+cd tutorial-2024-notebook
+```
+
+3. Open the notebook `tutorial.ipynb` in Jupyter by navigating to the cloned repository in Jupyter Lab and clicking on
+   the notebook file.
 
 ## Contributing
 
