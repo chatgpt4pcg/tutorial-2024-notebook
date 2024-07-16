@@ -31,29 +31,29 @@ conda activate cog-tutorial
 conda install -c conda-forge jupyterlab
 ```
 
-5. Once the installation is complete, you can launch Jupyter Lab by running:
-
-```
-jupyter lab
-```
-
-# Running the Tutorial
+### Running the Tutorial
 
 Next, you can run the tutorial notebook by following the instructions below.
 
-1. Clone this repository to your local machine.
+5. Clone this repository to your local machine.
 
 ```
 git clone https://github.com/chatgpt4pcg/tutorial-2024-notebook.git
 ```
 
-2. Change directory to the cloned repository:
+6. Change directory to the cloned repository:
 
 ```
 cd tutorial-2024-notebook
 ```
 
-3. Open the notebook `tutorial.ipynb` in Jupyter by navigating to the cloned repository in Jupyter Lab and clicking on
+7. Once the installation is complete, you can launch Jupyter Lab by running:
+
+```
+jupyter lab
+```
+
+8. Open the notebook `tutorial.ipynb` in Jupyter by navigating to the cloned repository in Jupyter Lab and clicking on
    the notebook file.
 
 ## Contributing

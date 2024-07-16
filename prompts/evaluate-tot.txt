@@ -6,7 +6,6 @@ Stability: <score>
 Similarity: <score>
 
 1. Function description
-1.2. Definitions
 Slots: The map's width is equally partitioned into W slots where W = 20, with slots 0 and 19 being the most left and right, respectively.
 Layers: The map's height is equally partitioned into H layers where H = 16, with layers 0 and 15 being the bottom and top layers, respectively.
 Base: The bottom of the map, i.e., layer 0.
