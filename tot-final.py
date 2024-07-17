@@ -20,9 +20,10 @@ class TreeOfThoughtPrompting(TrialLoop):
 
         current_content = ""
 
-        task_prompt_template = open(Path("prompts/task-tot.txt"), "r").read()
-        evaluation_prompt_template = open(Path("prompts/evaluate-tot.txt"), "r").read()
-        answer_prompt_template = open(Path("prompts/answer-tot.txt"), "r").read()
+        # Read the prompt text files
+        task_prompt_template = open(Path("tot-prompts/task-tot.txt"), "r").read()
+        evaluation_prompt_template = open(Path("tot-prompts/evaluate-tot.txt"), "r").read()
+        answer_prompt_template = open(Path("tot-prompts/answer-tot.txt"), "r").read()
 
         try:
             # Loop until reaching the maximum depth
@@ -55,9 +56,7 @@ class TreeOfThoughtPrompting(TrialLoop):
                 best_performing_thought = sorted(scores, key=lambda x: sum(x[1]), reverse=True)
                 current_content += f"{best_performing_thought[0][0]}\n"
 
-            # | 3. Repeat the process with the selected thought
-
-            # Format the final response in a correct format and return it
+            # | 3. Format the final response in a correct format and return it
             final_response = chat_with_llm(ctx, [
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": answer_prompt_template.format(
